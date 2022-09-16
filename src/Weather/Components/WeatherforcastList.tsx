@@ -32,6 +32,10 @@ export const WeatherforcastList = () => {
     instance
       .acquireTokenSilent(request)
       .then((response) => response.accessToken)
+      .catch((error) => {
+        alert("UnAuthorized!");
+        throw error;
+      })
       .then((token) => getWeatherList(token))
       .then((list) => {
         setWeathers(list);

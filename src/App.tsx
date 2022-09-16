@@ -18,9 +18,7 @@ function App() {
           <SignInButton></SignInButton>
         </UnauthenticatedTemplate>
       </header>
-      <AuthenticatedTemplate>
-        <WeatherforcastList></WeatherforcastList>
-      </AuthenticatedTemplate>
+      <WeatherforcastList></WeatherforcastList>
     </div>
   );
 }
